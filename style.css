@@ -83,27 +83,33 @@ h2 {
 }
 
 
+/* BOX SECTION */
+
 .box-section {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .box {
-    display: flex;
-    justify-content: space-between;
-    height: calc((100% / 3) - 30px);
-    padding: 20px;
+    height: calc((100% / 3) - 20px);
     background-color: #FFFFFF;
     border: 0px;
     box-shadow: 0px 4px 6px #407BFF1F;
     border-radius: 10px;
-    font-size: 13px;
     margin-bottom: 10px;
+}
+
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 13px;
 }
 
 .icon {
     display: inline-block;
-    width: 40px
+    height: 40px
 }
 
 .box-text {
@@ -153,17 +159,21 @@ h2 {
     }
 
     .box {
-        width: calc((100% / 3) - 40px);
+        width: calc((100% - 40px) / 3);
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .box-content {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: auto;
         padding: 40px 15px;
-        margin-bottom: 0;
     }
 
     .box-text {
         text-align: center;
+        width: 100%;
     } 
 
     .box-text p {
@@ -190,6 +200,88 @@ h2 {
 
 @media screen and (min-width: 1100px) {
 
+body {
+    max-width: 1040px;
+    margin: auto;
+    text-align: start;
+    padding: 60px 0;
+}
+
+.top-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pc-top-left {
+    order: 1;
+    width: calc(50% - 60px);    
+}
+
+.pc-top-right {
+    order: 2;
+    width: calc(50% - 60px);
+}
+
+.main-picture-wrap {
+    max-width: 425px;
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+.text-section {
+    margin: 30px 0;
+}
+
+.mid-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-right {
+    order: 2;
+    max-width: 430px;
+}
+
+.box-left {
+    order: 1;
+}
+
+.box-section {
+    max-width: 550px;
+}
+
+
+.last-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-right {
+    order: 2;
+}
+
+.text-left {
+    order: 1;
+    max-width: 430px;
+}
+
+
+
+.content-section {
+    margin-bottom: 80px;
+}
+
+.last-item {
+    margin-bottom: 0;
+}
+
+.box-content {
+    padding: 40px 15px;
+}
 
 
 }
