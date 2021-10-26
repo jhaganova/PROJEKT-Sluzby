@@ -69,7 +69,7 @@ hr {
     background-color: #8B8B8B;
 }
 
-.bottom-button-margin {
+.button + .button {
     margin-top: 10px;
 }
 
@@ -96,9 +96,11 @@ h2 {
     border: 0px;
     box-shadow: 0px 4px 6px #407BFF1F;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
+.box + .box {
+    margin-top: 10px;
+}
 
 .box-content {
     display: flex;
@@ -117,12 +119,8 @@ h2 {
     text-align: start;
 }
 
-.content-section {
-    margin-bottom: 60px;
-}
-
-.last-item {
-    margin-bottom: 0;
+.content-section + .content-section {
+    margin-top: 60px;
 }
 
 
@@ -135,12 +133,18 @@ h2 {
     }
 
     .text-section {
-        margin-left: 80px;
-        margin-right: 80px;
+        margin: 40px 90px;
     }
 
-    .button-left {
-        margin-right: 20px;
+    .top-page .text-section {
+        margin: 30px 90px;
+    }
+    
+    
+
+    .button + .button {
+        margin-top: 0;
+        margin-left: 20px;
     }
 
     .button-wrap {
@@ -161,7 +165,10 @@ h2 {
     .box {
         width: calc((100% - 40px) / 3);
         height: auto;
-        margin-bottom: 0;
+    }
+
+    .box + .box {
+        margin: 0;
     }
 
     .box-content {
@@ -180,18 +187,16 @@ h2 {
         margin: 0;
     }
 
+  
+
+
     .icon {
         margin-bottom: 20px;
     }
 
-    .content-section {
-        margin-bottom: 80px;
+    .content-section + .content-section {
+        margin-top: 80px;
     }
-
-    .last-item {
-        margin-bottom: 0;
-    }
-
 
 }
 
@@ -232,6 +237,7 @@ hr {
     margin: 0;
 }
 
+.top-page .text-section,
 .text-section {
     margin: 30px 0;
 }
@@ -267,16 +273,6 @@ hr {
 .text-left {
     order: 1;
     max-width: 430px;
-}
-
-
-
-.content-section {
-    margin-bottom: 80px;
-}
-
-.last-item {
-    margin-bottom: 0;
 }
 
 .box-content {
