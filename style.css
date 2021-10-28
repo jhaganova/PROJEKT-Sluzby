@@ -65,8 +65,16 @@ hr {
     background-color: #407BFF;
 }
 
+.button-blue:hover {
+    background-color: #2b5abe;
+}
+
 .button-grey {
     background-color: #8B8B8B;
+}
+
+.button-grey:hover {
+    background-color: #636262;
 }
 
 .button + .button {
